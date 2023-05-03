@@ -110,7 +110,3 @@ add_layer <- function(counts, to_sample, spot_ids, rescale=NULL) {
 	return(counts)
 }
 
-sc <- readRDS("C:/Users/tandrews/Documents/UHNSonya/snRNAseq/SingleNuc_vs_SingleCell/DE_DataShare/Integrated_with_Subannotation.rds")
-spatial <- readRDS("C:/Users/tandrews/Documents/UHNSonya/Spatial/PSC011_4_C1_forLattice.rds")
-
-		
