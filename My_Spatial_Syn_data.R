@@ -102,6 +102,7 @@ get_random_points <- function(coords, nspots=0.1*nrow(coords), nsets=1, plot=FAL
 
 add_layer <- function(counts, to_sample, spot_ids, rescale=NULL) {
 	to_add <- sample(1:ncol(to_sample), length(spot_ids), replace=TRUE)
+	to_add <- counts[,to_add]
 	if (!is.null(rescale)) {
 		to_add <- t( t(to_add)/colSums(to_add) * colSums(counts[,spot_ids])*rescale )
 	}
